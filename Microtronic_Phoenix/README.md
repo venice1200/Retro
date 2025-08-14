@@ -30,18 +30,18 @@ A GND connection is also needed!
   
 Usage `2095_pgm1.py [Filename] [ComPort]`  
 ..
-## Example:  
-python.exe 2095_pgm1.py kniffel.mic com16`  
+## Example (Windows 11):  
+python.exe 2095_pgm1.py kniffel.mic com16  
   
 Wait please, initializing...  
   
 Simple PC to Microtronic Phoenix MIC-File Uploader v1.2.  
 Your Phoenix is running PGM 1?  
-Transfer of "kniffel.mic" starts in 5 seconds using Port com18.  
-  
 Stop transfer with STRG/CTRL-C, if needed.  
   
-Start uploading File..  
+Transfer of "kniffel.mic" starts in 5 seconds using Port "com18".  
+  
+Go!  
   
 PC: 0x00/000 <=> 1F8  
 PC: 0x01/001 <=> FE8  
@@ -55,6 +55,6 @@ PC: 0xfa/250 <=> CEF
   
   
 Transferred 251 Code-Lines in 42.51 Seconds.  
-Now you can Reset your Phoenix.  
+Now Reset your Phoenix.  
 Cheers :-)  
 ..
