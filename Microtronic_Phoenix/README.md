@@ -4,7 +4,7 @@ A Python script for transferring MIC code files from the PC to the Microtronic P
 The Arduino Uno or Nano executes a program that can be accessed via the Python library on the PC.  
 The Arduino itself acts as external GPIO pins for the PC, which are connected to the Phoenix DIN pins.
   
-The Python Code is based on the 2095 Emulator Code of Martin Sauter & Michael Wessel.  
+The Python Code is based on the 2095 Emulation of Martin Sauter & Michael Wessel.  
 Further information can be found here:  
 https://blog.wirelessmoves.com/2017/06/emulating-a-busch-2090-tape-interface-part-1.html  
 https://github.com/lambdamikel/microtronic-2095-arduino-emulator/tree/master  
