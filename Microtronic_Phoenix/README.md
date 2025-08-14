@@ -27,6 +27,6 @@ BUSCH_DOT3 <-> D8
 !! Important !!  
 A GND connection is also needed!  
   
-Usage ~2095_pgm1.py [Filename] [ComPort]~  
-Example: ~2095_pgm1.py kniffel.mic com16~  
+Usage ´2095_pgm1.py [Filename] [ComPort]´  
+Example: `2095_pgm1.py kniffel.mic com16`  
   
