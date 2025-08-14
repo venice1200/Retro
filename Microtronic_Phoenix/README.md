@@ -1,7 +1,7 @@
 # Microtronic Phoenix Uploader  
   
-Direct transfer of MIC Files from PC to the Microtronic Phoenix using Python on PC and an external Arduino Uno.  
-The Arduino runs a program which can be accessed by the python library on the PC.  
+Direct transfer of MIC Files from PC to the Microtronic Phoenix using Python on PC and an connected Arduino.  
+The Arduino Uno or Nano runs a program which can be accessed by the python library on the PC.  
 The Arduino himself acts like external GPIO Pins for the PC.  
   
 The Python Code is based on the 2095 Emulator Code of Martin Sauter & Michael Wessel from here:  
@@ -29,7 +29,9 @@ BUSCH_DOT3 <-> D8
 A GND connection is also needed!  
   
 Usage `2095_pgm1.py [Filename] [ComPort]`  
-Example: `2095_pgm1.py kniffel.mic com16`  
+..
+## Example:  
+python.exe 2095_pgm1.py kniffel.mic com16`  
   
 Wait please, initializing...  
   
