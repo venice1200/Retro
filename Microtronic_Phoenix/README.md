@@ -13,6 +13,8 @@ https://github.com/ltspicer/usb_gpio
 Available digital pins on Uno/Nano are D2 to D13, configure and use them as input or output.  
 I think you need the "serial" library installed as well.  
   
+See: https://github.com/venice1200/Retro/blob/main/Microtronic_Phoenix/pic/connection.jpg  
+  
 Used IOs:  
 Phoenix Inputs <=> Arduino Output  
 BUSCH_DIN1 <-> D2  
