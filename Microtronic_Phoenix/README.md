@@ -1,16 +1,17 @@
 # Microtronic Phoenix Uploader  
   
-Direct 2095 Transfer from PC to the Microtronic Phoenix using an Arduino Uno or Nano as Serial IO Gateway.  
-The Arduino runs a gateway program which can be accessed by the python library from the PC side.  
+Direct transfer of MIC Files from PC to the Microtronic Phoenix using Python on PC and an external Arduino Uno.  
+The Arduino runs a program which can be accessed by the python library on the PC.  
+The Arduino himself acts like external GPIO Pins for the PC.  
   
-Python Code based on 2095 Emulator Code of Martin Sauter & Michael Wessel from here:  
+The Python Code is based on the 2095 Emulator Code of Martin Sauter & Michael Wessel from here:  
 https://blog.wirelessmoves.com/2017/06/emulating-a-busch-2090-tape-interface-part-1.html  
 https://github.com/lambdamikel/microtronic-2095-arduino-emulator/tree/master  
   
 The used USB-GPIO Python Lib and the Arduiono Skecth can be found here:  
 https://github.com/ltspicer/usb_gpio  
 Available digital pins on Uno/Nano are D2 to D13, configure and use them as input or output.  
-I think you need the "serial" library installed.  
+I think you need the "serial" library installed as well.  
   
 Used IOs:  
 Phoenix Inputs <=> Arduino Output  
@@ -27,6 +28,31 @@ BUSCH_DOT3 <-> D8
 !! Important !!  
 A GND connection is also needed!  
   
-Usage ```2095_pgm1.py [Filename] [ComPort]```  
+Usage `2095_pgm1.py [Filename] [ComPort]`  
 Example: `2095_pgm1.py kniffel.mic com16`  
   
+Wait please, initializing...  
+  
+Simple PC to Microtronic Phoenix MIC-File Uploader v1.2.  
+Your Phoenix is running PGM 1?  
+Transfer of "kniffel.mic" starts in 5 seconds using Port com18.  
+  
+Stop transfer with STRG/CTRL-C, if needed.  
+  
+Start uploading File..  
+  
+PC: 0x00/000 <=> 1F8  
+PC: 0x01/001 <=> FE8  
+PC: 0x02/002 <=> 1F9  
+PC: 0x03/003 <=> 1FA  
+...  
+PC: 0xf7/247 <=> 4D1  
+PC: 0xf8/248 <=> FB2  
+PC: 0xf9/249 <=> 4E2  
+PC: 0xfa/250 <=> CEF  
+  
+  
+Transferred 251 Code-Lines in 42.51 Seconds.  
+Now you can Reset your Phoenix.  
+Cheers :-)  
+..
