@@ -33,7 +33,7 @@ A GND connection is also needed!
 Usage `2095_pgm1.py [Filename] [ComPort]`  
 ..
 ## Example (Windows 11):  
-python.exe 2095_pgm1.py kniffel.mic com16  
+`python.exe 2095_pgm1.py kniffel.mic com16  
   
 Wait please, initializing...  
   
@@ -58,5 +58,5 @@ PC: 0xfa/250 <=> CEF
   
 Transferred 251 Code-Lines in 42.51 Seconds.  
 Now Reset your Phoenix.  
-Cheers :-)  
-..
+Cheers :-)`  
+  
