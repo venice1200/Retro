@@ -1,15 +1,15 @@
 # Microtronic Phoenix Uploader  
   
-Direct transfer of MIC Code Files from PC to the Microtronic Phoenix using Python on the PC and an connected Arduino.  
-The Arduino Uno or Nano runs a program which can be accessed by the python library on the PC.  
-The Arduino himself acts like external GPIO Pins for the PC which are connected to the Phoenix DIN Pins.  
+A Python script for transferring MIC code files from the PC to the Microtronic Phoenix via an Arduino connected via USB.  
+The Arduino Uno or Nano executes a program that can be accessed via the Python library on the PC.  
+The Arduino itself acts as external GPIO pins for the PC, which are connected to the Phoenix DIN pins.
   
 The Python Code is based on the 2095 Emulator Code of Martin Sauter & Michael Wessel.  
-See:  
+Further information can be found here:  
 https://blog.wirelessmoves.com/2017/06/emulating-a-busch-2090-tape-interface-part-1.html  
 https://github.com/lambdamikel/microtronic-2095-arduino-emulator/tree/master  
   
-The used USB-GPIO Python Lib and the Arduiono Sketch can be found here:  
+The used USB-GPIO Python Library and the Arduiono Sketch can be found here:  
 https://github.com/ltspicer/usb_gpio  
 Available digital pins on Uno/Nano are D2 to D13, configure and use them as input or output.  
 I think you need the python library "serial" as well.  
