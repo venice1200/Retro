@@ -1,8 +1,7 @@
-# Microtronic Phoenix  
-..
-Direct 2095 Transfer from PC to the Microtronic Phoenix using an Arduino Uno or Nano as Serial IO Gateway.  
+# Microtronic Phoenix Uploader  
   
-The Arduino runs a gateway sketch which can be accessed by the python library from the PC side.  
+Direct 2095 Transfer from PC to the Microtronic Phoenix using an Arduino Uno or Nano as Serial IO Gateway.  
+The Arduino runs a gateway program which can be accessed by the python library from the PC side.  
   
 Python Code based on 2095 Emulator Code of Martin Sauter & Michael Wessel from here:  
 https://blog.wirelessmoves.com/2017/06/emulating-a-busch-2090-tape-interface-part-1.html  
@@ -26,8 +25,8 @@ BUSCH_DOT2 <-> D7
 BUSCH_DOT3 <-> D8  
   
 !! Important !!  
-The GND connection is also needed!  
+A GND connection is also needed!  
   
-Usage 2095_pgm1.py [Filename] [ComPort]  
-Example: 2095_pgm1.py kniffel.mic com16  
+Usage ~2095_pgm1.py [Filename] [ComPort]~  
+Example: ~2095_pgm1.py kniffel.mic com16~  
   
