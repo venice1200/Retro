@@ -13,7 +13,7 @@ The used USB-GPIO Python Lib and the Arduiono Sketch can be found here:
 https://github.com/ltspicer/usb_gpio  
 Available digital pins on Uno/Nano are D2 to D13, configure and use them as input or output.  
 I think you need the "serial" library installed as well.  
-
+  
 ![Image](https://github.com/venice1200/Retro/blob/main/Microtronic_Phoenix/pic/connection.jpg)
   
 Used IOs:  
@@ -32,7 +32,7 @@ BUSCH_DOT3 <-> D8
 A GND connection is also needed!  
   
 Usage: `2095_pgm1.py [Filename] [ComPort]`  
-..
+  
 ## Example (Windows 11):  
 ```
 python.exe 2095_pgm1.py kniffel.mic com16  
