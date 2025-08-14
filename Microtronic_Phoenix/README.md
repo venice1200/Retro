@@ -60,5 +60,5 @@ PC: 0xfa/250 <=> CEF
   
 Transferred 251 Code-Lines in 42.51 Seconds.  
 Now Reset your Phoenix.  
-Cheers :-)'  
+Cheers :-)  
 ```
