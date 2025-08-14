@@ -12,9 +12,9 @@ https://github.com/lambdamikel/microtronic-2095-arduino-emulator/tree/master
 The used USB-GPIO Python Lib and the Arduiono Sketch can be found here:  
 https://github.com/ltspicer/usb_gpio  
 Available digital pins on Uno/Nano are D2 to D13, configure and use them as input or output.  
-I think you need the "serial" library installed as well.  
+I think you need the python library "serial" as well.  
   
-![Image](https://github.com/venice1200/Retro/blob/main/Microtronic_Phoenix/pic/connection.jpg)
+<img src="https://github.com/venice1200/Retro/blob/main/Microtronic_Phoenix/pic/connection.jpg" width="800" />
   
 Used IOs:  
 Phoenix Inputs <=> Arduino Output  
