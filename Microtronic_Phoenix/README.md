@@ -37,7 +37,7 @@ python.exe 2095_pgm1.py kniffel.mic com16
   
 Wait please, initializing...  
   
-Simple PC to Microtronic Phoenix MIC-File Uploader v1.2.  
+Tiny PC to Microtronic Phoenix MIC-File Uploader v1.2.  
 Your Phoenix is running PGM 1?  
 Stop transfer with STRG/CTRL-C, if needed.  
   
