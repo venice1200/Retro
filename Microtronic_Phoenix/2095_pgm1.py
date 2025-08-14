@@ -1,5 +1,5 @@
 #
-# v1.1 by lm/venice
+# 2025 by lm/venice
 # Direct Transfer from PC to the Microtronic Phoenix
 # using an Arduino Uno or Nano as Serial IO Gateway running
 # the usb_gpio sketch and the usb_gpio python library on PC side.
@@ -35,7 +35,7 @@
 #
 # 2025-08-09 v1.0 Initial Version
 # 2025-08-09 v1.1 Add ComPort Argument and checking, add Runtime, cosmetics
-# 2025-08-14 v1.2 Remove Wrapper "writeDigitalPin" as the statements are included in the library now
+# 2025-08-14 v1.2 Remove Wrapper "writeDigitalPin" as the statements are included in the library now, cosmetics
 #
 #
 
