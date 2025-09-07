@@ -9,10 +9,27 @@ Further information can be found here:
 https://blog.wirelessmoves.com/2017/06/emulating-a-busch-2090-tape-interface-part-1.html  
 https://github.com/lambdamikel/microtronic-2095-arduino-emulator/tree/master  
   
-The used USB-GPIO Python Library and the Arduiono Sketch can be found here:  
+  
+The originally used USB-GPIO Python Library and the Arduiono Sketch can be found here:  
 https://github.com/ltspicer/usb_gpio  
 Available digital pins on Uno/Nano are D2 to D13, configure and use them as input or output.  
 I think you need the python library "serial" as well.  
+  
+*** Update Arduino Sketch 2025-09-07 ***  
+I have updated and enhanced the USB-GPIO Arduino Skecth and added code from here:  
+https://github.com/rab-berlin/Monarch2090/tree/main/program/2090undArduino  
+The Microtronics RND System is not really random so the above programmer has created an  
+optional external Random Generator based on an Aduino,
+  
+Using the Arduino Input Pins D11 and D12 you are able to choose the Aruino Mode.
+Mode 0: D11 open, D12 open, Standard GPIO Mode  
+Mode 1: D11 GND, D12 open,  Random Number Generator 1..6 at D2..D5 maybe for Kniffel ???  
+        This Mode transfers data without handshake one by one  
+Mode 2: D11 open, D12 GND,  Random Number Generator 0..9 at D2..D5 for Microtronic Monarch Game  
+        Code is copied nearly 1:1 except the IO assigment.  
+Mode 3: D11 GND, D12 GND,   Random Number Generator 0..15 at D2..D5 for ???  
+        This Mode transfers data without handshake one by one  
+See the Arduino Sketch for Details.  
   
 <img src="https://github.com/venice1200/Retro/blob/main/Microtronic_Phoenix/pic/connection.jpg" width="800" />
   
@@ -23,10 +40,10 @@ BUSCH_DIN2 <-> D3
 BUSCH_DIN3 <-> D4  
 BUSCH_DIN4 <-> D5  
   
-Phoenix Outputs <=> Arduino Input (currently not in use)  
-BUSCH_DOT1 <-> D6  
-BUSCH_DOT2 <-> D7  
-BUSCH_DOT3 <-> D8  
+Phoenix Outputs <=> Arduino Input  
+BUSCH_DOT3 <-> D6  
+BUSCH_DOT4 <-> D7  
+D6/D7 are used for the RND Generator.
   
 **!! Important !!**  
 A GND connection is also needed!  
