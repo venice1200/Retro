@@ -26,14 +26,15 @@ I think you need the python library "serial" as well.
 **Updated Arduino Sketch 2025-09-07**  
 I have updated and enhanced the USB-GPIO Arduino Sketch and added code from here:  
 https://github.com/rab-berlin/Monarch2090/tree/main/program/2090undArduino  
-to add an RND generator for the Games Monarch and maybe Kniffel & Co.  
+to add an RND generator for the Microtronic Games Monarch and maybe Kniffel & Co.  
   
 The Microtronics RND System is not really random so the above programmer has created an  
 external Random Generator based on an Arduino which transfers the RND Data via IOs to the Busch 2090.  
 The RND Generator uses the same IO Pins as used by the Phoenix Uploader.  
   
-Using the Arduino Input Pins D11 and D12 you are able to choose the Aruino Mode during Start or Reset of the Arduino.  
-**Mode 0:** D11 open, D12 open, Standard GPIO Mode (default)  
+Now you can select the program mode during startup or reset of the Arduino via the Arduino input pins D11 and D12.  
+  
+**Mode 0:** D11 open, D12 open, Standard GPIO Mode for Uploading Mic files (default Mode)  
   
 **Mode 1:** D11 GND, D12 open,  Random Number Generator 1..6 at D2..D5 maybe for Kniffel ???  
 This Mode transfers data without handshake one by one.  
