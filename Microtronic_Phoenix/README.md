@@ -61,7 +61,8 @@ BUSCH_DIN4 <-> D5
 Phoenix Outputs <=> Arduino Input  
 BUSCH_DOT3 <-> D6  
 BUSCH_DOT4 <-> D7  
-D6/D7 are used for the RND Generator.
+Arduino D6/D7 are used for the RND Generator.  
+Arduino D8 is used for an switch against GND for the Monarch Game.  
   
 **!! Important !!**  
 A GND connection is also needed!  
