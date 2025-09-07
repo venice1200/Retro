@@ -8,12 +8,12 @@ The Arduino itself acts as external GPIO pins for the PC, which are connected to
 The Nano wants its digital outputs to be loaded with a maximum of 40 mA, typically only 20 mA.  
 The inputs of the Microtronic each have 100 ohms against GND.  
 This would then allow 50 mA of current to flow through the Arduino outputs at 5V. Ouch.  
-Therefore—to be on the safe side—use 1 kOhm resistors in front of the Microtronic inputs!
-I found the Note in German here:
+Therefore—to be on the safe side—use 1 kOhm resistors in front of the Microtronic inputs!  
+I found the Note in German here:  
 https://github.com/rab-berlin/Monarch2090/tree/main/program/2090undArduino#monarch2090-mit-arduino-nano
   
   
-The Python Code is based on the 2095 Emulation of Martin Sauter & Michael Wessel.  
+The Python Uploader Code is based on the 2095 Emulation of Martin Sauter & Michael Wessel.  
 Further information can be found here:  
 https://blog.wirelessmoves.com/2017/06/emulating-a-busch-2090-tape-interface-part-1.html  
 https://github.com/lambdamikel/microtronic-2095-arduino-emulator/tree/master  
