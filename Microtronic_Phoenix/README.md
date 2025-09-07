@@ -4,13 +4,14 @@ A Python script for transferring MIC code files from the PC to the Microtronic P
 The Arduino Uno or Nano executes a program that can be accessed via the Python library on the PC.  
 The Arduino itself acts as external GPIO pins for the PC, which are connected to the Phoenix DIN pins.
   
-**Important Note**  
+**Technical Important Note**  
 The Nano wants its digital outputs to be loaded with a maximum of 40 mA, typically only 20 mA.  
 The inputs of the Microtronic each have 100 ohms against GND.  
 This would then allow 50 mA of current to flow through the Arduino outputs at 5V. Ouch.  
 Therefore—to be on the safe side—use 1 kOhm resistors in front of the Microtronic inputs!
 I found the Note in German here:
 https://github.com/rab-berlin/Monarch2090/tree/main/program/2090undArduino#monarch2090-mit-arduino-nano
+  
   
 The Python Code is based on the 2095 Emulation of Martin Sauter & Michael Wessel.  
 Further information can be found here:  
@@ -33,13 +34,19 @@ The RND Generator uses the same IO Pins as used by the Phoenix Uploader.
   
 Using the Arduino Input Pins D11 and D12 you are able to choose the Aruino Mode during Start or Reset of the Arduino.  
 **Mode 0:** D11 open, D12 open, Standard GPIO Mode (default)  
+  
 **Mode 1:** D11 GND, D12 open,  Random Number Generator 1..6 at D2..D5 maybe for Kniffel ???  
-        This Mode transfers data without handshake one by one  
+This Mode transfers data without handshake one by one.  
+If you like to test this Mode with the Microtronic Kniffel Game from here https://github.com/rab-berlin/Kniffel2090  
+replace `F05` in line **0xC9** with `FDD` to use the external generated Values.  
+
 **Mode 2:** D11 open, D12 GND,  Random Number Generator 0..9 at D2..D5 for Microtronic Monarch Game  
-        Code is copied nearly 1:1 except the IO assigment.  
+Code is copied nearly 1:1 except the IO assigment.  
+  
 **Mode 3:** D11 GND, D12 GND,   Random Number Generator 0..15 at D2..D5 for ???  
-        This Mode transfers data without handshake one by one  
-See the Arduino Sketch for Details.  
+This Mode transfers data without handshake one by one.  
+  
+See the Arduino Sketch `pgm1_gpio_and_rnd_generator.ino` for Details.  
   
 <img src="https://github.com/venice1200/Retro/blob/main/Microtronic_Phoenix/pic/connection.jpg" width="800" />
   
