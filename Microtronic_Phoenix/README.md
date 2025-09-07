@@ -15,19 +15,19 @@ https://github.com/ltspicer/usb_gpio
 Available digital pins on Uno/Nano are D2 to D13, configure and use them as input or output.  
 I think you need the python library "serial" as well.  
   
-** Update Arduino Sketch 2025-09-07 **  
+**Update Arduino Sketch 2025-09-07**  
 I have updated and enhanced the USB-GPIO Arduino Skecth and added code from here:  
 https://github.com/rab-berlin/Monarch2090/tree/main/program/2090undArduino  
 The Microtronics RND System is not really random so the above programmer has created an  
 optional external Random Generator based on an Aduino,
   
 Using the Arduino Input Pins D11 and D12 you are able to choose the Aruino Mode during Start or Reset of the Arduino.  
-** Mode 0 **: D11 open, D12 open, Standard GPIO Mode (default)  
-Mode 1: D11 GND, D12 open,  Random Number Generator 1..6 at D2..D5 maybe for Kniffel ???  
+**Mode 0:** D11 open, D12 open, Standard GPIO Mode (default)  
+**Mode 1:** D11 GND, D12 open,  Random Number Generator 1..6 at D2..D5 maybe for Kniffel ???  
         This Mode transfers data without handshake one by one  
-Mode 2: D11 open, D12 GND,  Random Number Generator 0..9 at D2..D5 for Microtronic Monarch Game  
+**Mode 2:** D11 open, D12 GND,  Random Number Generator 0..9 at D2..D5 for Microtronic Monarch Game  
         Code is copied nearly 1:1 except the IO assigment.  
-Mode 3: D11 GND, D12 GND,   Random Number Generator 0..15 at D2..D5 for ???  
+**Mode 3:** D11 GND, D12 GND,   Random Number Generator 0..15 at D2..D5 for ???  
         This Mode transfers data without handshake one by one  
 See the Arduino Sketch for Details.  
   
