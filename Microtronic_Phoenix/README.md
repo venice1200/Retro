@@ -4,22 +4,32 @@ A Python script for transferring MIC code files from the PC to the Microtronic P
 The Arduino Uno or Nano executes a program that can be accessed via the Python library on the PC.  
 The Arduino itself acts as external GPIO pins for the PC, which are connected to the Phoenix DIN pins.
   
+**Important Note**  
+The Nano wants its digital outputs to be loaded with a maximum of 40 mA, typically only 20 mA.  
+The inputs of the Microtronic each have 100 ohms against GND.  
+This would then allow 50 mA of current to flow through the Arduino outputs at 5V. Ouch.  
+Therefore—to be on the safe side—use 1 kOhm resistors in front of the Microtronic inputs!
+I found the Note in German here:
+https://github.com/rab-berlin/Monarch2090/tree/main/program/2090undArduino#monarch2090-mit-arduino-nano
+  
 The Python Code is based on the 2095 Emulation of Martin Sauter & Michael Wessel.  
 Further information can be found here:  
 https://blog.wirelessmoves.com/2017/06/emulating-a-busch-2090-tape-interface-part-1.html  
 https://github.com/lambdamikel/microtronic-2095-arduino-emulator/tree/master  
-  
   
 The originally used USB-GPIO Python Library and the Arduiono Sketch can be found here:  
 https://github.com/ltspicer/usb_gpio  
 Available digital pins on Uno/Nano are D2 to D13, configure and use them as input or output.  
 I think you need the python library "serial" as well.  
   
-**Update Arduino Sketch 2025-09-07**  
-I have updated and enhanced the USB-GPIO Arduino Skecth and added code from here:  
+**Updated Arduino Sketch 2025-09-07**  
+I have updated and enhanced the USB-GPIO Arduino Sketch and added code from here:  
 https://github.com/rab-berlin/Monarch2090/tree/main/program/2090undArduino  
+to add an RND generator for the Games Monarch and maybe Kniffel & Co.  
+  
 The Microtronics RND System is not really random so the above programmer has created an  
-optional external Random Generator based on an Aduino,
+external Random Generator based on an Arduino which transfers the RND Data via IOs to the Busch 2090.  
+The RND Generator uses the same IO Pins as used by the Phoenix Uploader.  
   
 Using the Arduino Input Pins D11 and D12 you are able to choose the Aruino Mode during Start or Reset of the Arduino.  
 **Mode 0:** D11 open, D12 open, Standard GPIO Mode (default)  
