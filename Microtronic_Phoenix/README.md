@@ -39,7 +39,7 @@ Now you can select the program mode during startup or reset of the Arduino via t
 **Mode 1:** D11 GND, D12 open,  Random Number Generator 1..6 at D2..D5 maybe for Kniffel ???  
 This Mode transfers data without handshake one by one.  
 If you like to test this Mode with the Microtronic Kniffel Game from here https://github.com/rab-berlin/Kniffel2090  
-replace `F05` in line **0xC9** with `FDD` to use the external generated Values.  
+replace `F05` in line **0xCB** with `FDD` to use the external generated Values.  
 
 **Mode 2:** D11 open, D12 GND,  Random Number Generator 0..9 at D2..D5 for Microtronic Monarch Game  
 Code is copied nearly 1:1 except the IO assigment.  
