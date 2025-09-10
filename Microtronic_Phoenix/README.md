@@ -21,7 +21,7 @@ Further information can be found here:
 https://blog.wirelessmoves.com/2017/06/emulating-a-busch-2090-tape-interface-part-1.html  
 https://github.com/lambdamikel/microtronic-2095-arduino-emulator/tree/master  
   
-The used USB-GPIO Python Library and the **original** Arduiono Sketch can be found here:  
+The used USB-GPIO Python Library and the **original** Arduino Sketch can be found here:  
 https://github.com/ltspicer/usb_gpio  
 Available digital pins on Uno/Nano are D2 to D13, configure and use them as input or output.  
 I may you need the python library "serial" or "pyserial" as well.  
@@ -62,11 +62,11 @@ See the Arduino Sketch `pgm1_gpio_and_rnd_generator.ino` for Details.
 |DIN3|D4|
 |DIN4|D5|
   
-|Phoenix Outputs|Arduino Input|Purpose|
-|---------------|:-----------:|---|
-|BUSCH_DOT3|D6|  
-|BUSCH_DOT4|D7|  
-||D6&D7|are used for the RND Generator|
+|Phoenix Output|Arduino Input|Purpose|
+|--------------|:-----------:|---|
+|DOT3|D6|  
+|DOT4|D7|  
+||D6 & D7|are used for the RND Generator|
 ||D8|is used for an switch against GND for the Monarch Game|
   
 **!! Important !!**  
@@ -74,10 +74,9 @@ A GND connection is also needed!
   
 <img src="https://github.com/venice1200/Retro/blob/main/Microtronic_Phoenix/pic/connection.jpg" width="800" />
   
-### Tiny Uploader Example
+### Tiny Uploader Example (Windows 11)
 Usage: `2095_pgm1.py [Filename] [ComPort]`  
   
-## Example (Windows 11):  
 ```
 python.exe 2095_pgm1.py kniffel.mic com16  
   
