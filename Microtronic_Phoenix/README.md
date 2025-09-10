@@ -11,8 +11,9 @@ https://github.com/rab-berlin/Monarch2090/tree/main/program/2090undArduino#monar
 ## This Device has two purposes in 4 Modes
   
 ### Mode 1: Tiny MIC Uploader
-A Python script is used for transferring MIC code files from the PC to the Microtronic Phoenix via an Arduino connected via USB.  
-An Arduino Uno or Nano executes a program that can be accessed via the Python library on the PC.  
+A Python script is used for transferring MIC code files from the PC to the Microtronic Phoenix  
+via an Arduino Nano or Uno connected via USB.  
+The Arduino executes a program that can be accessed via the Python library on the PC.  
 The Arduino itself acts as external GPIO pins for the PC, which are connected to the Phoenix DIN pins.
   
 The Python Uploader Code is based on the 2095 Emulation of Martin Sauter & Michael Wessel.  
@@ -23,10 +24,10 @@ https://github.com/lambdamikel/microtronic-2095-arduino-emulator/tree/master
 The used USB-GPIO Python Library and the **original** Arduiono Sketch can be found here:  
 https://github.com/ltspicer/usb_gpio  
 Available digital pins on Uno/Nano are D2 to D13, configure and use them as input or output.  
-I think you need the python library "serial" as well.  
+I may you need the python library "serial" or "pyserial" as well.  
   
 ### Mode 2-4: Random Generator
-The Microtronics RND System is not really random so the above programmer has created an  
+The Microtronics Random System is not really random so the Monarch/Kniffel programmer has created an  
 external Random Generator based on an Arduino which transfers the RND Data via IOs to the Busch 2090.  
 The RND Generator uses the same IO Pins as used by the Phoenix Uploader.  
   
@@ -54,11 +55,12 @@ See the Arduino Sketch `pgm1_gpio_and_rnd_generator.ino` for Details.
   
   
 ### Used IOs  
-Phoenix Inputs <=> Arduino Output  
-BUSCH_DIN1 <-> D2  
-BUSCH_DIN2 <-> D3  
-BUSCH_DIN3 <-> D4  
-BUSCH_DIN4 <-> D5  
+|Phoenix Inputs|Arduino Output|
+| -------------|:------------:|
+|BUSCH_DIN1|D2|
+|BUSCH_DIN2|D3|
+|BUSCH_DIN3|D4|
+|BUSCH_DIN4|D5|
   
 Phoenix Outputs <=> Arduino Input  
 BUSCH_DOT3 <-> D6  
