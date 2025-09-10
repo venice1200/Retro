@@ -78,7 +78,9 @@ See the Arduino Sketch `pgm1_gpio_and_rnd_generator.ino` for Details.
 **!! Important !!**  
 A GND connection is also needed!  
   
-<img src="https://github.com/venice1200/Retro/blob/main/Microtronic_Phoenix/pic/connection.jpg" width="800" />
+<img src="https://github.com/venice1200/Retro/blob/main/Microtronic_Phoenix/pic/connection.jpg" width="800" />  
+New Picture needed  
+  
   
 ### Tiny Uploader Example (Windows 11)
 Usage: `2095_pgm1.py [Filename] [ComPort]`  
