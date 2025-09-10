@@ -66,8 +66,8 @@ See the Arduino Sketch `pgm1_gpio_and_rnd_generator.ino` for Details.
 |---------------|:-----------:|---|
 |BUSCH_DOT3|D6|  
 |BUSCH_DOT4|D7|  
-||D6&D7 are used for the RND Generator|
-||D8| is used for an switch against GND for the Monarch Game|
+||D6&D7|are used for the RND Generator|
+||D8|is used for an switch against GND for the Monarch Game|
   
 **!! Important !!**  
 A GND connection is also needed!  
