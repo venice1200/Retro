@@ -27,13 +27,15 @@ Available digital pins on Uno/Nano are D2 to D13, configure and use them as inpu
 I may you need the python library "serial" or "pyserial" as well.  
   
 ### Mode 2-4: Random Generator
-The Microtronics Random System is not really random so the Monarch/Kniffel programmer has created an  
-external Random Generator based on an Arduino which transfers the RND Data via IOs to the Busch 2090.  
+The Microtronics Random System is not really Random, so the Monarch/Kniffel programmer has created an  
+external Random Generator based on an Arduino which transfers the RND Data via IOs to the Microtronic.  
 The RND Generator uses the same IO Pins as used by the Phoenix Uploader.  
   
 I have updated and enhanced the USB-GPIO Arduino Sketch and added code from here:  
 https://github.com/rab-berlin/Monarch2090/tree/main/program/2090undArduino  
 to add the Random generator for the Microtronic Games Monarch and maybe Kniffel & Co.  
+  
+You will find the sketch here: https://github.com/venice1200/Retro/tree/main/Microtronic_Phoenix/pgm1_gpio_and_rnd_generator  
   
 ### How to select the Mode?  
 You can select the program mode during startup or reset of the Arduino via the Arduino input pins D11 and D12.  
