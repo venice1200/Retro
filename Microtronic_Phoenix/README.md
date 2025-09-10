@@ -1,16 +1,20 @@
-# Microtronic Phoenix Uploader  
+# Microtronic Phoenix Uploader & Random Generator  
   
-A Python script for transferring MIC code files from the PC to the Microtronic Phoenix via an Arduino connected via USB.  
-The Arduino Uno or Nano executes a program that can be accessed via the Python library on the PC.  
-The Arduino itself acts as external GPIO pins for the PC, which are connected to the Phoenix DIN pins.
-  
-**Technical Important Note**  
+**Important Technical Note**  
 The Nano wants its digital outputs to be loaded with a maximum of 40 mA, typically only 20 mA.  
 The inputs of the Microtronic each have 100 ohms against GND.  
 This would then allow 50 mA of current to flow through the Arduino outputs at 5V. Ouch.  
 Therefore—to be on the safe side—use 1 kOhm resistors in front of the Microtronic inputs!  
 I found the Note in German here:  
 https://github.com/rab-berlin/Monarch2090/tree/main/program/2090undArduino#monarch2090-mit-arduino-nano
+  
+  
+**This Device has two purposes in 4 Modes**  
+  
+## Mode 1: Tiny MIC Uploader  
+A Python script for transferring MIC code files from the PC to the Microtronic Phoenix via an Arduino connected via USB.  
+The Arduino Uno or Nano executes a program that can be accessed via the Python library on the PC.  
+The Arduino itself acts as external GPIO pins for the PC, which are connected to the Phoenix DIN pins.
   
   
 The Python Uploader Code is based on the 2095 Emulation of Martin Sauter & Michael Wessel.  
@@ -23,16 +27,17 @@ https://github.com/ltspicer/usb_gpio
 Available digital pins on Uno/Nano are D2 to D13, configure and use them as input or output.  
 I think you need the python library "serial" as well.  
   
-**Updated Arduino Sketch 2025-09-07**  
-I have updated and enhanced the USB-GPIO Arduino Sketch and added code from here:  
-https://github.com/rab-berlin/Monarch2090/tree/main/program/2090undArduino  
-to add an RND generator for the Microtronic Games Monarch and maybe Kniffel & Co.  
-  
+## Mode 2-4: Random Generator  
 The Microtronics RND System is not really random so the above programmer has created an  
 external Random Generator based on an Arduino which transfers the RND Data via IOs to the Busch 2090.  
 The RND Generator uses the same IO Pins as used by the Phoenix Uploader.  
   
-Now you can select the program mode during startup or reset of the Arduino via the Arduino input pins D11 and D12.  
+I have updated and enhanced the USB-GPIO Arduino Sketch and added code from here:  
+https://github.com/rab-berlin/Monarch2090/tree/main/program/2090undArduino  
+to add the Random generator for the Microtronic Games Monarch and maybe Kniffel & Co.  
+  
+## How to selct the Mode?  
+You can select the program mode during startup or reset of the Arduino via the Arduino input pins D11 and D12.  
   
 **Mode 0:** D11 open, D12 open, Standard GPIO Mode for Uploading Mic files (default Mode)  
   
@@ -49,6 +54,7 @@ This Mode transfers data without handshake one by one.
   
 See the Arduino Sketch `pgm1_gpio_and_rnd_generator.ino` for Details.  
   
+## Tiny Uploader Example
 <img src="https://github.com/venice1200/Retro/blob/main/Microtronic_Phoenix/pic/connection.jpg" width="800" />
   
 Used IOs:  
