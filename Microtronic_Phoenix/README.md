@@ -36,7 +36,7 @@ I have updated and enhanced the USB-GPIO Arduino Sketch and added code from here
 https://github.com/rab-berlin/Monarch2090/tree/main/program/2090undArduino  
 to add the Random generator for the Microtronic Games Monarch and maybe Kniffel & Co.  
   
-### How to selct the Mode?  
+### How to select the Mode?  
 You can select the program mode during startup or reset of the Arduino via the Arduino input pins D11 and D12.  
   
 **Mode 0:** D11 open, D12 open, Standard GPIO Mode for Uploading Mic files (default Mode)  
@@ -54,10 +54,8 @@ This Mode transfers data without handshake one by one.
   
 See the Arduino Sketch `pgm1_gpio_and_rnd_generator.ino` for Details.  
   
-### Tiny Uploader Example
-<img src="https://github.com/venice1200/Retro/blob/main/Microtronic_Phoenix/pic/connection.jpg" width="800" />
   
-Used IOs:  
+### Used IOs  
 Phoenix Inputs <=> Arduino Output  
 BUSCH_DIN1 <-> D2  
 BUSCH_DIN2 <-> D3  
@@ -73,6 +71,9 @@ Arduino D8 is used for an switch against GND for the Monarch Game.
 **!! Important !!**  
 A GND connection is also needed!  
   
+<img src="https://github.com/venice1200/Retro/blob/main/Microtronic_Phoenix/pic/connection.jpg" width="800" />
+  
+### Tiny Uploader Example
 Usage: `2095_pgm1.py [Filename] [ComPort]`  
   
 ## Example (Windows 11):  
