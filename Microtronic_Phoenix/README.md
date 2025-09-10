@@ -35,7 +35,8 @@ I have updated and enhanced the USB-GPIO Arduino Sketch and added code from here
 https://github.com/rab-berlin/Monarch2090/tree/main/program/2090undArduino  
 to add the Random generator for the Microtronic Games Monarch and maybe Kniffel & Co.  
   
-You will find the sketch here: https://github.com/venice1200/Retro/tree/main/Microtronic_Phoenix/pgm1_gpio_and_rnd_generator  
+You will find the sketch here:  
+https://github.com/venice1200/Retro/tree/main/Microtronic_Phoenix/pgm1_gpio_and_rnd_generator  
   
 ### How to select the Mode?  
 You can select the program mode during startup or reset of the Arduino via the Arduino input pins D11 and D12.  
