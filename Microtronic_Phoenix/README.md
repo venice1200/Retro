@@ -9,9 +9,9 @@ I found the Note in German here:
 https://github.com/rab-berlin/Monarch2090/tree/main/program/2090undArduino#monarch2090-mit-arduino-nano
   
   
-**This Device has two purposes in 4 Modes**  
+## This Device has two purposes in 4 Modes**  
   
-## Mode 1: Tiny MIC Uploader  
+### Mode 1: Tiny MIC Uploader  
 A Python script for transferring MIC code files from the PC to the Microtronic Phoenix via an Arduino connected via USB.  
 The Arduino Uno or Nano executes a program that can be accessed via the Python library on the PC.  
 The Arduino itself acts as external GPIO pins for the PC, which are connected to the Phoenix DIN pins.
@@ -36,7 +36,7 @@ I have updated and enhanced the USB-GPIO Arduino Sketch and added code from here
 https://github.com/rab-berlin/Monarch2090/tree/main/program/2090undArduino  
 to add the Random generator for the Microtronic Games Monarch and maybe Kniffel & Co.  
   
-## How to selct the Mode?  
+### How to selct the Mode?  
 You can select the program mode during startup or reset of the Arduino via the Arduino input pins D11 and D12.  
   
 **Mode 0:** D11 open, D12 open, Standard GPIO Mode for Uploading Mic files (default Mode)  
@@ -54,7 +54,7 @@ This Mode transfers data without handshake one by one.
   
 See the Arduino Sketch `pgm1_gpio_and_rnd_generator.ino` for Details.  
   
-## Tiny Uploader Example
+### Tiny Uploader Example
 <img src="https://github.com/venice1200/Retro/blob/main/Microtronic_Phoenix/pic/connection.jpg" width="800" />
   
 Used IOs:  
