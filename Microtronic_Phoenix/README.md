@@ -55,18 +55,19 @@ See the Arduino Sketch `pgm1_gpio_and_rnd_generator.ino` for Details.
   
   
 ### Used IOs  
-|Phoenix Inputs|Arduino Output|
+|Phoenix/Busch Input|Arduino Output|
 | -------------|:------------:|
-|BUSCH_DIN1|D2|
-|BUSCH_DIN2|D3|
-|BUSCH_DIN3|D4|
-|BUSCH_DIN4|D5|
+|DIN1|D2|
+|DIN2|D3|
+|DIN3|D4|
+|DIN4|D5|
   
-Phoenix Outputs <=> Arduino Input  
-BUSCH_DOT3 <-> D6  
-BUSCH_DOT4 <-> D7  
-Arduino D6/D7 are used for the RND Generator.  
-Arduino D8 is used for an switch against GND for the Monarch Game.  
+|Phoenix Outputs|Arduino Input|Purpose|
+|---------------|:-----------:|---|
+|BUSCH_DOT3|D6|  
+|BUSCH_DOT4|D7|  
+||D6&D7 are used for the RND Generator|
+||D8| is used for an switch against GND for the Monarch Game|
   
 **!! Important !!**  
 A GND connection is also needed!  
