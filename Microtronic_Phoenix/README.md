@@ -69,10 +69,11 @@ See the Arduino Sketch `pgm1_gpio_and_rnd_generator.ino` for Details.
   
 |Phoenix Output|Arduino Input|Purpose|
 |--------------|:-----------:|---|
-|DOT3|D6|  
-|DOT4|D7|  
-||D6 & D7|are used for the RND Generator|
-||D8|is used for an switch against GND for the Monarch Game|
+|DOT3|D6|Used for the RND Generator|
+|DOT4|D7|Used for the RND Generator|
+||D8|Used for an switch against GND for the Monarch Game|
+||D11|Mode Pin 1|
+||D12|Mode Pin 2|
   
 **!! Important !!**  
 A GND connection is also needed!  
