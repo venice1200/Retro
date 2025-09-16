@@ -24,7 +24,7 @@ https://github.com/lambdamikel/microtronic-2095-arduino-emulator/tree/master
 The used USB-GPIO Python Library and the **original** Arduino Sketch can be found here:  
 https://github.com/ltspicer/usb_gpio  
 Available digital pins on Uno/Nano are D2 to D13, configure and use them as input or output.  
-I may you need the python library "serial" or "pyserial" as well.  
+You may need the python library "serial" or "pyserial" as well.  
   
 ### Mode 2-4: Random Generator
 The Microtronics Random System is not really Random, so the Monarch/Kniffel programmer has created an  
@@ -41,7 +41,7 @@ https://github.com/venice1200/Retro/tree/main/Microtronic_Phoenix/pgm1_gpio_and_
 ### How to select the Mode?  
 You can select the program mode during startup or reset of the Arduino via the Arduino input pins D11 and D12.  
   
-**Mode 0:** D11 open, D12 open, Standard GPIO Mode for Uploading Mic files (default Mode)  
+**Mode 0:** D11 open, D12 open, Standard GPIO Mode for Uploading MIC files (default Mode)  
   
 **Mode 1:** D11 GND, D12 open, Random Number Generator 1..6 at D2..D5 maybe for Kniffel ???  
 This Mode transfers data without handshake one by one.  
