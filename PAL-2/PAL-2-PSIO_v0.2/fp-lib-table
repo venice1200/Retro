@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "T-Pau")(type "KiCad")(uri "${KIPRJMOD}/../KiCad-Library/T-Pau.pretty")(options "")(descr ""))
+)
