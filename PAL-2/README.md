@@ -2,7 +2,7 @@
 Two IO Board Projects for the PAL-2 System.  
 Similar features, different Layout.  
   
-Pins for USb Serial, PA0-7 , PB0-7 (incl. PB6) and DecEn,  
+Pins for USB Serial, PA0-7 , PB0-7 (incl. PB6) and DecEn,  
 TTY & KBD Switch, RS232 & USB Serial Switch,  
 Switch for RS232 Straight & Nullmodem Mode,  
 Switch for USB or DC Barrel Connector Power .  
