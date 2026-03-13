@@ -1,7 +1,7 @@
 # PAL-2  
 Two IO Board Projects for the PAL-2 System.  
 Similar features, different Layout.  
-Based on PAL-2 PSU by Dieter Baron (dillof)  
+Based on PAL-2 PSU by Dieter Baron https://github.com/T-Pau/PAL-2-PSU
   
 Pins for USB Serial, PA0-7 , PB0-7 (incl. PB6) and DecEn,  
 TTY & KBD Switch, RS232 (using MAX232) & USB Serial Switch,  
