@@ -4,7 +4,7 @@ Similar features, different Layout.
 Based on PAL-2 PSU by Dieter Baron https://github.com/T-Pau/PAL-2-PSU
   
 Pins for USB Serial, PA0-7 , PB0-7 (PB6 need a mainboard mod) and DecEn,  
-TTY & KBD Switch, RS232 (using MAX232) & USB Serial Switch,  
+TTY & KBD Switch, RS232 (using MAX202) & USB Serial Switch,  
 Switch for RS232 Straight & Nullmodem Mode,  
 Jumper/Solder Jumper for RS232 Mode, PB6 and DecEn.  
   
