@@ -7,8 +7,9 @@ Pins for USB Serial, PA0-7 , PB0-7 (PB6 need a PAL-2 mod) and DecEn,
 TTY & KBD Switch, RS232 (using MAX202) & USB Serial Switch,  
 Switch for RS232 Straight & Nullmodem Mode,  
 Jumper/Solder Jumper for RS232 Mode, PB6 and DecEn.  
+IO Block Layout compatible with PAL-1 Add-On Boards.  
   
-Switch for USB or DC Barrel Connector Power.  
+3-Way Switch for USB or DC Barrel Connector Power.  
   
 v0.1 (PA/PB IO at bottom)  
 <img src="https://github.com/venice1200/Retro/blob/main/PAL-2/PAL-2-PSIO_v0.1/front.png" width="400" class="center" /> <img src="https://github.com/venice1200/Retro/blob/main/PAL-2/PAL-2-PSIO_v0.1/back.png" width="400" class="center" />   
