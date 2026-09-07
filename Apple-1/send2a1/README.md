@@ -1,7 +1,7 @@
 # Binary File Uploader send2a1  
   
-"send2a1.py" Python Script 2026 by lm/venice  
-Read HEX/Text file and send the Data to an Apple-1 using a connected Serial-Port  
+"send2a1.py" Python Script
+Read HEX/Text file and send the Data to an Apple-1 using a connected Terminal/Serial-Port  
   
 This script uses:  
 pySerial, progressbar  
