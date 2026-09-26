@@ -7,14 +7,15 @@ The Scripts reads a HEX/Text File and send the Data to an Apple-1 using a connec
 The Text File must have "LF" Line Endings.  
 The Baudrate is set to 9600 by default, but can be changed using an optional command line parameter (see Usage).  
   
-This script uses the Python Add-Ons: pySerial, progressbar  
+This script uses the Python Add-Ons pySerial, progressbar which can be installed using PIP.  
   
 ```  
 Usage:  
 python send2a1_v0.2.py [Filename] [COM-Port] [Baudrate(optional)]  
   
 Examples (Windows):  
-python send2a1_v0.2.py mandelbrot65_v1.0_LF.txt COM18 or  
+python send2a1_v0.2.py mandelbrot65_v1.0_LF.txt COM18  
+or  
 python send2a1_v0.2.py mandelbrot65_v1.0_LF.txt COM18 2400  
 ```  
   
