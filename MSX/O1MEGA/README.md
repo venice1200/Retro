@@ -1,5 +1,5 @@
 # O1MEGA for Omega MSX  
-Space optimized PCB for additional 512KB Ram for the Omega MSX Computer.  
+Space optimized PCB for additional 512KB Ram for the [Omega MSX Computer](https://github.com/skiselev/omega).  
 The PCB is based on the [o4mega](https://github.com/msx-solis/o4Mega_v3.2) Board from MSXmakers.  
   
 [Schematics](KiCad/o1mega_THT_Schematics.pdf)  
